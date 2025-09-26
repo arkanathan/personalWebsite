@@ -1,0 +1,1582 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathan Dava Arkananta - AI & Cybersecurity Innovator</title>
+    <meta name="description" content="Portfolio of Nathan Dava Arkananta - Building the future through advanced AI and cybersecurity innovation.">
+    <link rel="icon" type="image/x-icon" href="nd-logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="nd-logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="nd-logo.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="nd-logo.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="nd-logo.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="nd-logo.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="nd-logo.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="nd-logo.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="nd-logo.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="nd-logo.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="nd-logo.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="nd-logo.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="nd-logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="nd-logo.png">
+    <meta name="msapplication-TileImage" content="nd-logo.png">
+    <meta name="msapplication-TileColor" content="#FBBF24">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Font Definitions */
+        .font-serif-heading { font-family: 'Lora', serif; }
+        .font-sans-body { font-family: 'Lexend', sans-serif; }
+        
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Advanced Neural Network Background */
+        #neural-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, 
+                #0B1426, /* Deep neural blue */
+                #1A237E, /* Indigo depth */
+                #283593, /* Neural purple */
+                #1E3A3A, /* Tech teal */
+                #2D1B69, /* Innovation purple */
+                #0B1426
+            );
+            background-size: 600% 600%;
+            animation: neuralFlow 35s ease-in-out infinite;
+            z-index: -4;
+        }
+        
+        @keyframes neuralFlow {
+            0%, 100% { 
+                background-position: 0% 50%;
+                filter: hue-rotate(0deg) brightness(1) saturate(1.1);
+            }
+            20% { 
+                background-position: 80% 20%;
+                filter: hue-rotate(20deg) brightness(1.1) saturate(1.2);
+            }
+            40% { 
+                background-position: 100% 80%;
+                filter: hue-rotate(-15deg) brightness(0.9) saturate(1.0);
+            }
+            60% { 
+                background-position: 20% 100%;
+                filter: hue-rotate(30deg) brightness(1.05) saturate(1.3);
+            }
+            80% { 
+                background-position: 60% 40%;
+                filter: hue-rotate(-10deg) brightness(1.02) saturate(1.1);
+            }
+        }
+
+        /* Innovation Ray Overlay */
+        #innovation-rays {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -3;
+            pointer-events: none;
+            opacity: 0.12;
+        }
+
+        .innovation-ray {
+            position: absolute;
+            background: linear-gradient(90deg, 
+                transparent 0%, 
+                rgba(251, 191, 36, 0.4) 20%, 
+                rgba(255, 193, 7, 0.5) 50%, 
+                rgba(251, 191, 36, 0.4) 80%, 
+                transparent 100%
+            );
+            transform-origin: center;
+            animation: innovationPulse 10s ease-in-out infinite;
+        }
+
+        @keyframes innovationPulse {
+            0%, 100% { opacity: 0.1; transform: scale(1); }
+            50% { opacity: 0.3; transform: scale(1.1); }
+        }
+
+        /* Dynamic Knowledge Nodes */
+        #knowledge-nodes {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .knowledge-node {
+            position: absolute;
+            border-radius: 50%;
+            background: radial-gradient(circle, 
+                rgba(251, 191, 36, 0.08) 0%, 
+                rgba(255, 193, 7, 0.06) 30%, 
+                rgba(255, 152, 0, 0.04) 60%, 
+                transparent 80%
+            );
+            animation: nodeEvolution 15s ease-in-out infinite;
+        }
+
+        .knowledge-node:nth-child(2n) {
+            background: radial-gradient(circle, 
+                rgba(63, 81, 181, 0.08) 0%, 
+                rgba(103, 58, 183, 0.06) 30%, 
+                rgba(156, 39, 176, 0.04) 60%, 
+                transparent 80%
+            );
+            animation-delay: -7s;
+        }
+
+        .knowledge-node:nth-child(3n) {
+            background: radial-gradient(circle, 
+                rgba(0, 188, 212, 0.06) 0%, 
+                rgba(0, 150, 136, 0.04) 40%, 
+                transparent 70%
+            );
+            animation-delay: -3s;
+        }
+
+        @keyframes nodeEvolution {
+            0%, 100% { 
+                opacity: 0.3;
+                transform: scale(1) rotate(0deg);
+            }
+            33% { 
+                opacity: 0.8;
+                transform: scale(1.4) rotate(120deg);
+            }
+            66% { 
+                opacity: 0.5;
+                transform: scale(0.8) rotate(240deg);
+            }
+        }
+        
+        /* Neural Network Canvas */
+        #network-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+        }
+        
+        /* AI Learning Particles */
+        .ai-particle {
+            position: fixed;
+            border-radius: 50%;
+            opacity: 0;
+            pointer-events: none;
+            z-index: 1;
+            animation: aiLearning 6s ease-in-out infinite;
+        }
+
+        .particle-data {
+            background: radial-gradient(circle, #FFD700, #FFA500);
+            box-shadow: 0 0 8px #FFD700, 0 0 16px rgba(255, 215, 0, 0.4);
+        }
+
+        .particle-neural {
+            background: radial-gradient(circle, #3F51B5, #9C27B0);
+            box-shadow: 0 0 6px #3F51B5, 0 0 12px rgba(63, 81, 181, 0.3);
+        }
+
+        .particle-innovation {
+            background: radial-gradient(circle, #FBBF24, #FF9800);
+            box-shadow: 0 0 10px #FBBF24, 0 0 20px rgba(251, 191, 36, 0.5);
+        }
+
+        @keyframes aiLearning {
+            0% { transform: scale(0) rotate(0deg); opacity: 0; }
+            25% { transform: scale(1.2) rotate(90deg); opacity: 0.9; }
+            50% { transform: scale(1) rotate(180deg); opacity: 1; }
+            75% { transform: scale(0.8) rotate(270deg); opacity: 0.7; }
+            100% { transform: scale(0) rotate(360deg); opacity: 0; }
+        }
+        
+        /* Professional Interactive Elements */
+        a, button {
+            position: relative;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        a:hover, button:hover {
+            text-shadow: 0 0 12px rgba(251, 191, 36, 0.8);
+            transform: translateY(-2px);
+        }
+
+        /* Enhanced navigation */
+        nav a {
+            position: relative;
+            overflow: hidden;
+        }
+
+        nav a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, 
+                transparent, 
+                rgba(251, 191, 36, 0.2), 
+                rgba(255, 193, 7, 0.15), 
+                transparent
+            );
+            transition: left 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        nav a:hover::before {
+            left: 100%;
+        }
+        
+        /* Advanced Project Cards */
+        article.project-card {
+            position: relative;
+            background: rgba(25, 35, 70, 0.4);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(251, 191, 36, 0.2);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        article.project-card:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 
+                0 25px 50px rgba(0, 0, 0, 0.4), 
+                0 0 30px rgba(251, 191, 36, 0.3),
+                inset 0 1px 0 rgba(251, 191, 36, 0.1);
+            border-color: rgba(251, 191, 36, 0.5);
+            background: rgba(25, 35, 70, 0.6);
+        }
+        
+        /* Neural shimmer effect */
+        article.project-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(from 0deg, 
+                transparent, 
+                rgba(251, 191, 36, 0.1), 
+                rgba(63, 81, 181, 0.08), 
+                transparent, 
+                rgba(255, 193, 7, 0.06), 
+                transparent
+            );
+            opacity: 0;
+            transition: opacity 0.6s ease;
+            pointer-events: none;
+        }
+        
+        article.project-card:hover::before {
+            opacity: 1;
+            animation: neuralShimmer 6s linear infinite;
+        }
+        
+        @keyframes neuralShimmer {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        /* Learning path lines */
+        .learning-line {
+            stroke-dasharray: 2000;
+            stroke-dashoffset: 2000;
+            transition: stroke-dashoffset 3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .learning-line.activate {
+            stroke-dashoffset: 0;
+        }
+
+        /* Professional animations with staggered effects */
+        [data-animate] {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1), 
+                        transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        [data-animate].reveal {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Staggered animation delays */
+        [data-animate-delay="0.1s"] { transition-delay: 0.1s; }
+        [data-animate-delay="0.2s"] { transition-delay: 0.2s; }
+        [data-animate-delay="0.3s"] { transition-delay: 0.3s; }
+        [data-animate-delay="0.4s"] { transition-delay: 0.4s; }
+        [data-animate-delay="0.5s"] { transition-delay: 0.5s; }
+        [data-animate-delay="0.6s"] { transition-delay: 0.6s; }
+
+        /* Enhanced text reveal animations */
+        .animate-text-reveal {
+            opacity: 0;
+            transform: translateY(20px) scale(0.95);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .animate-text-reveal.active {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+
+        /* Subtle glow effect for animated elements */
+        .animate-glow {
+            opacity: 0;
+            filter: blur(1px);
+            transition: opacity 1.2s ease, filter 1.2s ease;
+        }
+
+        .animate-glow.active {
+            opacity: 1;
+            filter: blur(0);
+        }
+
+        /* List item animations */
+        .animate-list-item {
+            opacity: 0;
+            transform: translateX(-20px);
+            transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), 
+                        transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .animate-list-item.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        /* Enhanced CTAs */
+        .cta-primary {
+            background: linear-gradient(135deg, #FBBF24, #FF9800, #F57C00);
+            box-shadow: 
+                0 4px 20px rgba(251, 191, 36, 0.4),
+                0 0 30px rgba(255, 152, 0, 0.2);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-primary::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+            transform: scale(0);
+            transition: transform 0.6s ease;
+        }
+
+        .cta-primary:hover::before {
+            transform: scale(1);
+        }
+
+        .cta-primary:hover {
+            background: linear-gradient(135deg, #FFD54F, #FFAB00, #FF8F00);
+            box-shadow: 
+                0 8px 30px rgba(251, 191, 36, 0.6),
+                0 0 40px rgba(255, 152, 0, 0.4);
+            transform: translateY(-3px) scale(1.05);
+        }
+
+        .cta-secondary {
+            background: rgba(251, 191, 36, 0.1);
+            backdrop-filter: blur(15px);
+            border: 2px solid rgba(251, 191, 36, 0.3);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .cta-secondary:hover {
+            background: rgba(251, 191, 36, 0.2);
+            border-color: rgba(251, 191, 36, 0.6);
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 10px 25px rgba(251, 191, 36, 0.2);
+        }
+
+        /* Professional project visuals */
+        .project-visual-tech {
+            background: linear-gradient(135deg, 
+                rgba(251, 191, 36, 0.1), 
+                rgba(63, 81, 181, 0.08), 
+                rgba(156, 39, 176, 0.06)
+            );
+            border: 2px dashed rgba(251, 191, 36, 0.3);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-visual-tech::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, 
+                transparent, 
+                rgba(251, 191, 36, 0.1), 
+                transparent
+            );
+            transition: left 2s ease;
+        }
+
+        .project-visual-tech:hover::before {
+            left: 100%;
+        }
+
+        .project-visual-tech:hover {
+            border-color: rgba(251, 191, 36, 0.6);
+            background: linear-gradient(135deg, 
+                rgba(251, 191, 36, 0.15), 
+                rgba(63, 81, 181, 0.12), 
+                rgba(156, 39, 176, 0.1)
+            );
+        }
+
+        /* Enhanced contact cards */
+        .contact-card {
+            background: rgba(25, 35, 70, 0.4);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(251, 191, 36, 0.2);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .contact-card:hover {
+            background: rgba(25, 35, 70, 0.7);
+            border-color: rgba(251, 191, 36, 0.5);
+            transform: translateY(-6px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3),
+                        0 0 20px rgba(251, 191, 36, 0.2);
+        }
+
+        /* Focus Statement Styling */
+        .focus-statement {
+            background: linear-gradient(135deg, 
+                rgba(251, 191, 36, 0.1), 
+                rgba(63, 81, 181, 0.08)
+            );
+            border: 1px solid rgba(251, 191, 36, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        /* Profile Picture Styling */
+        .profile-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .profile-main {
+            width: 280px;
+            height: 280px;
+            border-radius: 20px;
+            object-fit: cover;
+            border: 4px solid rgba(251, 191, 36, 0.4);
+            box-shadow: 
+                0 20px 40px rgba(0, 0, 0, 0.3),
+                0 0 30px rgba(251, 191, 36, 0.2);
+            transition: all 0.4s ease;
+        }
+
+        .profile-main:hover {
+            transform: scale(1.05) rotate(2deg);
+            border-color: rgba(251, 191, 36, 0.6);
+            box-shadow: 
+                0 25px 50px rgba(0, 0, 0, 0.4),
+                0 0 40px rgba(251, 191, 36, 0.3);
+        }
+
+        .profile-overlay {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, rgba(251, 191, 36, 0.2), rgba(63, 81, 181, 0.15));
+            border-radius: 50%;
+            border: 2px solid rgba(251, 191, 36, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(10px);
+        }
+
+        /* LinkedIn embed styling */
+        .linkedin-embed {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(251, 191, 36, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .linkedin-embed:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(251, 191, 36, 0.4);
+        }
+
+        /* Responsive optimizations */
+        @media (max-width: 768px) {
+            .knowledge-node {
+                display: none;
+            }
+            
+            article.project-card:hover {
+                transform: translateY(-6px) scale(1.01);
+            }
+
+            .profile-main {
+                width: 200px;
+                height: 200px;
+            }
+
+            .profile-overlay {
+                width: 80px;
+                height: 80px;
+                top: -5px;
+                right: -5px;
+            }
+        }
+
+        /* Loading state */
+        .typewriter-cursor {
+            animation: techPulse 1.5s infinite;
+        }
+
+        @keyframes techPulse {
+            0%, 50% { opacity: 1; color: #FBBF24; }
+            51%, 100% { opacity: 0; color: #FF9800; }
+        }
+
+        /* Accessibility improvements */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-indigo-950 text-blue-100 font-sans-body antialiased">
+    <div id="neural-bg"></div>
+    <div id="innovation-rays"></div>
+    <div id="knowledge-nodes"></div>
+    <canvas id="network-canvas"></canvas>
+    
+    <div class="flex flex-col min-h-screen">
+        <header class="sticky top-0 z-50 backdrop-blur-md bg-indigo-950/80 border-b border-yellow-400/20">
+            <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16">
+                    <div class="flex-shrink-0">
+                        <a href="#home" class="text-2xl font-bold text-yellow-400 font-serif-heading hover:text-yellow-300 transition-colors">ND.</a>
+                    </div>
+                    <div id="nav-links" class="hidden md:flex md:items-center md:space-x-1">
+                        <a href="#home" data-navlink class="text-blue-200 hover:text-yellow-300 hover:bg-yellow-400/10 rounded-full px-4 py-2 text-sm font-medium transition-all duration-300">Home</a>
+                        <a href="#focus" data-navlink class="text-blue-200 hover:text-yellow-300 hover:bg-yellow-400/10 rounded-full px-4 py-2 text-sm font-medium transition-all duration-300">Focus</a>
+                        <a href="#projects" data-navlink class="text-blue-200 hover:text-yellow-300 hover:bg-yellow-400/10 rounded-full px-4 py-2 text-sm font-medium transition-all duration-300">Projects</a>
+                        <a href="#journey" data-navlink class="text-blue-200 hover:text-yellow-300 hover:bg-yellow-400/10 rounded-full px-4 py-2 text-sm font-medium transition-all duration-300">Journey</a>
+                        <a href="#about" data-navlink class="text-blue-200 hover:text-yellow-300 hover:bg-yellow-400/10 rounded-full px-4 py-2 text-sm font-medium transition-all duration-300">About</a>
+                        <a href="#cv" data-navlink class="text-blue-200 hover:text-yellow-300 hover:bg-yellow-400/10 rounded-full px-4 py-2 text-sm font-medium transition-all duration-300">CV</a>
+                        <a href="#contact" data-navlink class="text-blue-200 hover:text-yellow-300 hover:bg-yellow-400/10 rounded-full px-4 py-2 text-sm font-medium transition-all duration-300">Connect</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="flex-grow">
+            <section id="home" class="relative min-h-screen flex items-center justify-center text-center bg-transparent">
+                <div class="z-10 px-4">
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif-heading font-bold tracking-tight text-blue-50 leading-tight">
+                        <span id="typewriter"></span>
+                    </h1>
+                    <p class="mt-8 max-w-4xl mx-auto text-lg sm:text-xl md:text-2xl text-blue-200 leading-relaxed">
+    Growing in <span class="text-yellow-400 font-semibold">cybersecurity, IT GRC, and AI</span> to bridge <span class="text-yellow-400 font-semibold">business strategy</span>, <span class="text-yellow-400 font-semibold">human needs</span>, and <span class="text-yellow-400 font-semibold">technical innovation</span>—developing solutions that address complex challenges with measurable, meaningful impact.
+</p>
+                    <div class="mt-12 flex flex-col sm:flex-row items-center justify-center gap-6">
+                        <a href="#projects" class="cta-primary group w-full sm:w-auto flex items-center justify-center gap-3 text-gray-900 font-bold py-4 px-8 rounded-lg text-lg">
+                            Explore Innovation
+                            <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                            </svg>
+                        </a>
+                        <a href="#contact" class="cta-secondary w-full sm:w-auto text-center text-yellow-400 hover:text-yellow-300 font-medium py-4 px-8 rounded-lg text-lg">
+                            Connect & Collaborate
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="focus" class="py-20 sm:py-24">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="max-w-4xl mx-auto text-center" data-animate>
+                        <div class="focus-statement rounded-2xl p-8 lg:p-12">
+                            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif-heading font-bold text-yellow-400 mb-6">My Focus</h2>
+                            <p class="text-xl sm:text-2xl lg:text-3xl text-blue-100 leading-relaxed font-medium">
+                                'Building my expertise in intelligent security systems and ethical AI development, with a focus on creating solutions that adapt to emerging threats while driving meaningful business outcomes.'
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+<section id="projects" class="py-20 sm:py-24 lg:py-32">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="relative text-center mb-16" data-animate>
+                        <h2 class="text-4xl font-serif-heading font-bold tracking-tight text-blue-50 sm:text-5xl lg:text-6xl">Innovation Portfolio</h2>
+                        <svg class="absolute -bottom-4 left-1/2 -translate-x-1/2 h-8 w-64 text-yellow-400/60" fill="none" viewBox="0 0 254 30">
+                            <path class="learning-line" d="M1 15C51 2, 158 39, 253 15" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+                            <circle cx="20" cy="12" r="2" fill="currentColor" opacity="0.8">
+                                <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+                            </circle>
+                            <circle cx="127" cy="18" r="2" fill="currentColor" opacity="0.6">
+                                <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite"/>
+                            </circle>
+                            <circle cx="230" cy="13" r="2" fill="currentColor" opacity="0.7">
+                                <animate attributeName="opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite"/>
+                            </circle>
+                        </svg>
+                        <p class="mt-6 max-w-2xl mx-auto text-lg text-blue-300">Advanced solutions at the intersection of artificial intelligence, cybersecurity, and strategic business intelligence.</p>
+                    </div>
+                    
+                    <!-- First project - full width featured -->
+                    <div class="mb-12" data-animate>
+                        <article class="project-card shadow-xl overflow-hidden">
+                            <div class="flex flex-col lg:flex-row">
+                                <div class="lg:w-1/3 p-6">
+                                    <div class="project-visual-tech h-48 lg:h-full rounded-lg overflow-hidden">
+                                        <img src="AwangFramework.png" alt="AWANG-AI Three-Phase Architecture Framework - Data Ingestion, AI Processing, and Insights Output" class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105">
+                                    </div>
+                                </div>
+                                <div class="lg:w-2/3 p-6 lg:p-8">
+                                    <header>
+                                        <div class="flex flex-col gap-4 mb-4">
+                                            <div class="flex items-center justify-center lg:justify-start">
+                                                <div class="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-400/20 to-amber-400/20 text-yellow-300 rounded-xl px-4 py-2 text-sm font-bold border border-yellow-400/40 shadow-lg shadow-yellow-400/20">
+                                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                                    </svg>
+                                                    <span class="text-base">🏆 2nd Place National Winner</span>
+                                                </div>
+                                            </div>
+                                            <h3 class="text-2xl lg:text-3xl font-serif-heading font-bold text-blue-50">AWANG-AI: Advanced Financial Crime Detection System</h3>
+                                        </div>
+                                        <p class="mt-3 text-lg text-yellow-400 leading-relaxed">Cutting-edge AI framework for Indonesia's Financial Services Authority (OJK) utilizing Graph Neural Networks and Explainable AI to revolutionize financial crime detection.</p>
+                                        <div class="mt-4 flex flex-wrap gap-2">
+                                            <span class="bg-indigo-800/50 text-blue-300 text-xs font-semibold px-3 py-1 rounded-full border border-yellow-600/30">Graph Neural Networks</span>
+                                            <span class="bg-indigo-800/50 text-blue-300 text-xs font-semibold px-3 py-1 rounded-full border border-yellow-600/30">Explainable AI</span>
+                                            <span class="bg-indigo-800/50 text-blue-300 text-xs font-semibold px-3 py-1 rounded-full border border-yellow-600/30">Python/TensorFlow</span>
+                                            <span class="bg-indigo-800/50 text-blue-300 text-xs font-semibold px-3 py-1 rounded-full border border-yellow-600/30">System Architecture</span>
+                                        </div>
+                                    </header>
+                                    <div class="mt-6 border-t border-yellow-400/20 pt-6 space-y-4 text-blue-200">
+                                        <div data-animate-delay="0.1s">
+                                            <h4 class="font-semibold text-yellow-400 mb-2 flex items-center gap-2">
+                                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path d="M10 2L3 7v11a1 1 0 001 1h3v-8h6v8h3a1 1 0 001-1V7l-7-5z"/>
+                                                </svg>
+                                                Challenge Identified
+                                            </h4>
+                                            <p class="leading-relaxed">Traditional AML systems generate excessive false positives, creating operational inefficiency while sophisticated financial crimes evade detection through conventional rule-based approaches.</p>
+                                        </div>
+                                        <div data-animate-delay="0.2s">
+                                            <h4 class="font-semibold text-yellow-400 mb-2 flex items-center gap-2">
+                                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+                                                </svg>
+                                                Leadership Role
+                                            </h4>
+                                            <p class="leading-relaxed">Led comprehensive research initiative as principal architect, designing novel multi-intelligence framework, conducting performance analysis, and authoring technical documentation for regulatory implementation.</p>
+                                        </div>
+                                        <div data-animate-delay="0.3s">
+                                            <h4 class="font-semibold text-yellow-400 mb-2 flex items-center gap-2">
+                                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                                                </svg>
+                                                Technical Innovation
+                                            </h4>
+                                            <p class="leading-relaxed mb-4">Architected three-phase intelligent framework:</p>
+                                            <div class="ml-4 space-y-2 text-sm">
+                                                <div class="flex items-start gap-3 animate-list-item" data-animate-delay="0.1s">
+                                                    <div class="w-2 h-2 bg-yellow-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                                                    <div>
+                                                        <span class="font-semibold text-yellow-400">Data Ingestion Phase:</span> Advanced preprocessing pipelines for financial transaction data with real-time anomaly detection capabilities
+                                                    </div>
+                                                </div>
+                                                <div class="flex items-start gap-3 animate-list-item" data-animate-delay="0.2s">
+                                                    <div class="w-2 h-2 bg-yellow-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                                                    <div>
+                                                        <span class="font-semibold text-yellow-400">AI Processing (GNN & xAI):</span> Ensemble Graph Neural Networks for complex relationship detection integrated with hybrid SHAP-counterfactual explainable AI framework
+                                                    </div>
+                                                </div>
+                                                <div class="flex items-start gap-3 animate-list-item" data-animate-delay="0.3s">
+                                                    <div class="w-2 h-2 bg-yellow-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                                                    <div>
+                                                        <span class="font-semibold text-yellow-400">Insights & Output:</span> Transparent decision engine with regulatory-compliant reporting and actionable intelligence dashboards for financial institutions
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-animate-delay="0.4s">
+                                            <h4 class="font-semibold text-yellow-400 mb-2 flex items-center gap-2">
+                                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"/>
+                                                </svg>
+                                                Measurable Impact
+                                            </h4>
+                                            <p class="leading-relaxed">Achieved <strong class="text-yellow-400">92% precision accuracy</strong> with <strong class="text-yellow-400">sub-5% false positive rate</strong>, projecting <strong class="text-yellow-400">30% operational efficiency improvement</strong> while maintaining high regulatory auditor acceptance through explainable AI implementation.</p>
+                                        </div>
+                                    </div>
+                                    <footer class="mt-6 pt-6 border-t border-yellow-400/20 flex flex-wrap gap-x-6 gap-y-2"><a href="https://drive.google.com/file/d/1EbJYhjSGx6qQJKtALOWKY1jkoUpqotsv/view?usp=sharing" class="font-semibold text-yellow-400 hover:text-yellow-300 hover:underline transition-colors">[Technical Research Paper]</a> (requires access request)
+<a href="https://www.canva.com/design/DAGvu3lBWrU/ySGAwM5jTPzCqy0Akh-x2A/view?utm_content=DAGvu3lBWrU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h8de7ad60df" class="font-semibold text-yellow-400 hover:text-yellow-300 hover:underline transition-colors">[Final Presentation]</a>
+                                    </footer>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Three smaller projects - responsive grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-animate>
+                        <article class="project-card shadow-xl overflow-hidden">
+                            <div class="p-6">
+                                <div class="project-visual-tech h-32 rounded-lg flex items-center justify-center mb-6 bg-gradient-to-br from-gray-800/50 to-gray-900/70 border border-gray-600/30">
+                                    <div class="text-center">
+                                        <svg class="w-8 h-8 mx-auto mb-1 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                                        </svg>
+                                        <p class="text-xs text-gray-500 font-medium">Confidential/Internal</p>
+                                        <p class="text-xs text-gray-600 mt-1">Security clearance required</p>
+                                    </div>
+                                </div>
+                                <header>
+                                    <h3 class="text-xl font-serif-heading font-bold text-blue-50 mb-3">Advanced Threat Intelligence Platform</h3>
+                                    <div class="flex flex-wrap gap-2 mb-4">
+                                        <span class="bg-indigo-800/50 text-blue-300 text-xs font-semibold px-2.5 py-1 rounded-full border border-yellow-600/30">Cyber Defense</span>
+                                        <span class="bg-indigo-800/50 text-blue-300 text-xs font-semibold px-2.5 py-1 rounded-full border border-yellow-600/30">ML Pipeline</span>
+                                        <span class="bg-indigo-800/50 text-blue-300 text-xs font-semibold px-2.5 py-1 rounded-full border border-yellow-600/30">Threat Analysis</span>
+                                        <span class="bg-indigo-800/50 text-blue-300 text-xs font-semibold px-2.5 py-1 rounded-full border border-yellow-600/30">Regional Focus</span>
+                                    </div>
+                                </header>
+                                <div class="space-y-3 text-blue-200 text-sm">
+                                    <div>
+                                        <h4 class="font-semibold text-yellow-400 mb-1">Strategic Need</h4>
+                                        <p>Indonesian organizations lack comprehensive, localized threat intelligence infrastructure, creating vulnerabilities to region-specific cyber attacks and emerging threat vectors.</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-yellow-400 mb-1">Technical Leadership</h4>
+                                        <p>Building my expertise in intelligent security systems and ethical AI development, with a focus on creating solutions that adapt to emerging threats while driving meaningful business outcomes.</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-yellow-400 mb-1">Development Status</h4>
+                                        <p>Currently in advanced development phase—pioneering first-generation indigenous threat intelligence platform to enhance national cybersecurity posture and organizational resilience.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card shadow-xl overflow-hidden">
+                            <div class="p-6">
+                                <div class="project-visual-tech h-32 rounded-lg flex items-center justify-center mb-6 bg-gradient-to-br from-orange-900/30 to-yellow-900/30 border border-orange-600/20">
+                                    <div class="text-center">
+                                        <svg class="w-8 h-8 mx-auto mb-1 text-orange-400/80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a1 1 0 01-1-1V9a1 1 0 011-1h1a2 2 0 100-4H4a1 1 0 01-1-1V4a1 1 0 011-1h3a1 1 0 001-1z"></path>
+                                        </svg>
+                                        <p class="text-xs text-orange-400/90 font-medium">Active Development</p>
+                                        <p class="text-xs text-orange-300/70 mt-1">UD Impact Innovation Competition</p>
+                                    </div>
+                                </div>
+                                <header>
+                                    <h3 class="text-xl font-serif-heading font-bold text-blue-50 mb-3">CarbonChain AI - Intelligent Compliance Automation</h3>
+                                    <div class="flex flex-wrap gap-2 mb-4">
+                                        <span class="bg-indigo-800/50 text-blue-300 text-xs font-semibold px-2.5 py-1 rounded-full border border-yellow-600/30">B2B SaaS</span>
+                                        <span class="bg-indigo-800/50 text-blue-300 text-xs font-semibold px-2.5 py-1 rounded-full border border-yellow-600/30">Market Analysis</span>
+                                        <span class="bg-indigo-800/50 text-blue-300 text-xs font-semibold px-2.5 py-1 rounded-full border border-yellow-600/30">Solution Architecture</span>
+                                        <span class="bg-indigo-800/50 text-blue-300 text-xs font-semibold px-2.5 py-1 rounded-full border border-yellow-600/30">RegTech</span>
+                                    </div>
+                                </header>
+                                <div class="space-y-3 text-blue-200 text-sm">
+                                    <div>
+                                        <h4 class="font-semibold text-yellow-400 mb-1">Market Opportunity</h4>
+                                        <p>Enterprises face increasing complexity in carbon tax compliance regulations, creating demand for automated, intelligent solutions that reduce operational overhead and regulatory risk.</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-yellow-400 mb-1">Research Leadership</h4>
+                                        <p>Leading comprehensive market research initiatives and designing end-to-end B2B solution architecture that automates carbon data collection, analysis, and regulatory reporting workflows.</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-yellow-400 mb-1">Validation Results</h4>
+                                        <p>Presented solution framework at national innovation competition, demonstrating clear product-market fit with quantified client value proposition and scalable business model validation.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 4TH PROJECT -->
+                        <article class="project-card shadow-xl overflow-hidden">
+                            <div class="p-6">
+                                <div class="project-visual-tech h-32 rounded-lg flex items-center justify-center mb-6 bg-gradient-to-br from-blue-900/30 to-indigo-900/30 border border-blue-600/20">
+                                    <div class="text-center">
+                                        <svg class="w-8 h-8 mx-auto mb-1 text-blue-400/80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                                        </svg>
+                                        <p class="text-xs text-blue-400/90 font-medium">Business Case</p>
+                                        <p class="text-xs text-blue-300/70 mt-1">Solution Architecture</p>
+                                    </div>
+                                </div>
+                                <header>
+                                    <h3 class="text-xl font-serif-heading font-bold text-blue-50 mb-3">AI-Powered Sales Intelligence Platform</h3>
+                                    <div class="flex flex-wrap gap-2 mb-4">
+                                        <span class="bg-indigo-800/50 text-blue-300 text-xs font-semibold px-2.5 py-1 rounded-full border border-yellow-600/30">Business Solution</span>
+                                        <span class="bg-indigo-800/50 text-blue-300 text-xs font-semibold px-2.5 py-1 rounded-full border border-yellow-600/30">AI/ML</span>
+                                        <span class="bg-indigo-800/50 text-blue-300 text-xs font-semibold px-2.5 py-1 rounded-full border border-yellow-600/30">Predictive Analytics</span>
+                                        <span class="bg-indigo-800/50 text-blue-300 text-xs font-semibold px-2.5 py-1 rounded-full border border-yellow-600/30">System Design</span>
+                                        <span class="bg-indigo-800/50 text-blue-300 text-xs font-semibold px-2.5 py-1 rounded-full border border-yellow-600/30">Sales Intelligence</span>
+                                    </div>
+                                </header>
+                                <div class="space-y-3 text-blue-200 text-sm">
+                                    <div>
+                                        <h4 class="font-semibold text-yellow-400 mb-1">Strategic Need</h4>
+                                        <p>Traditional enterprise sales funnels are plagued by inefficiencies, including low win rates (2-3%), time-consuming manual qualification, and reactive decision-making.</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-yellow-400 mb-1">My Role & Approach</h4>
+                                        <p>As the proposing Business Solution Architect for this challenge, I analyzed the sales funnel, identified bottlenecks, and designed a comprehensive, AI-driven platform covering architecture, roadmap, and business impact.</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-yellow-400 mb-1">Projected Impact</h4>
+                                        <p>The proposed solution projects a >140% improvement in sales win rate, a 35% reduction in the sales cycle, and a full ROI of 280% within 12 months.</p>
+                                    </div>
+                                </div>
+                                <footer class="mt-4 pt-4 border-t border-yellow-400/20">
+                                    <a href="https://www.canva.com/design/DAGpIJrkVgA/l0qPuZesYkc-hGPs4YqzbA/view?utm_content=DAGpIJrkVgA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h894944a1c2" target="_blank" rel="noopener noreferrer" class="font-semibold text-yellow-400 hover:text-yellow-300 hover:underline transition-colors text-sm">[Business Case Presentation Deck]</a>
+                                </footer>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="journey" class="py-20 sm:py-24 lg:py-32">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="relative text-center mb-16" data-animate>
+                        <h2 class="text-4xl font-serif-heading font-bold tracking-tight text-blue-50 sm:text-5xl lg:text-6xl">My Growth Journey</h2>
+                        <svg class="absolute -bottom-4 left-1/2 -translate-x-1/2 h-8 w-64 text-yellow-400/60" fill="none" viewBox="0 0 254 30">
+                            <path class="learning-line" d="M1 15C51 2, 158 39, 253 15" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+                        </svg>
+                        <p class="mt-6 max-w-2xl mx-auto text-lg text-blue-300">Key milestones in my continuous learning and professional development journey.</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8" data-animate>
+                        <div class="bg-indigo-900/30 backdrop-blur-sm rounded-xl p-6 border border-yellow-400/20 group">
+                            <h3 class="text-xl font-serif-heading font-bold text-yellow-400 mb-4">National-Level Innovation Winner</h3>
+                            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7363768873159979008/" target="_blank" rel="noopener noreferrer" class="block relative overflow-hidden rounded-lg border border-yellow-400/20 group-hover:border-yellow-400/50 transition-all duration-300">
+                                <img src="GrowthJourney_AWANG.png" alt="AWANG AI Competition - 2nd Place Winner Achievement" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                                    <div class="p-4 text-white">
+                                        <div class="flex items-center gap-2">
+                                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                            </svg>
+                                            <span class="text-sm font-medium">View on LinkedIn</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="bg-indigo-900/30 backdrop-blur-sm rounded-xl p-6 border border-yellow-400/20 group">
+                            <h3 class="text-xl font-serif-heading font-bold text-yellow-400 mb-4">IT Audit & GRC Excellence</h3>
+                            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7352873520827125760/" target="_blank" rel="noopener noreferrer" class="block relative overflow-hidden rounded-lg border border-yellow-400/20 group-hover:border-yellow-400/50 transition-all duration-300">
+                                <img src="GrowthJourney_AUDIT.png" alt="IT Audit & GRC Bootcamp Graduate Achievement" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                                    <div class="p-4 text-white">
+                                        <div class="flex items-center gap-2">
+                                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                            </svg>
+                                            <span class="text-sm font-medium">View on LinkedIn</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="bg-indigo-900/30 backdrop-blur-sm rounded-xl p-6 border border-yellow-400/20 group">
+                            <h3 class="text-xl font-serif-heading font-bold text-yellow-400 mb-4">Digistar Technology Program</h3>
+                            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7248142250675732481/" target="_blank" rel="noopener noreferrer" class="block relative overflow-hidden rounded-lg border border-yellow-400/20 group-hover:border-yellow-400/50 transition-all duration-300">
+                                <img src="GrowthJourney_DIGISTAR.png" alt="Digistar Technology Program Mentee Achievement" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                                    <div class="p-4 text-white">
+                                        <div class="flex items-center gap-2">
+                                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                            </svg>
+                                            <span class="text-sm font-medium">View on LinkedIn</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="py-20 sm:py-24 lg:py-32">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="max-w-6xl mx-auto">
+                        <div class="relative text-center mb-16" data-animate>
+                            <h2 class="text-4xl font-serif-heading font-bold tracking-tight text-blue-50 sm:text-5xl lg:text-6xl">About Me</h2>
+                            <svg class="absolute -bottom-4 left-1/2 -translate-x-1/2 h-8 w-64 text-yellow-400/60" fill="none" viewBox="0 0 254 30">
+                                <path class="learning-line" d="M1 15C51 2, 158 39, 253 15" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        
+                        <div class="flex flex-col lg:flex-row items-center lg:items-start gap-12" data-animate>
+                            <div class="flex-shrink-0">
+                                <div class="profile-container">
+                                    <img src="personal-image.png" alt="Nathan Dava Arkananta - AI & Cybersecurity Professional" class="profile-main">
+                                    <div class="profile-overlay">
+                                        <svg class="w-8 h-8 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-6">
+                                    <p class="text-2xl text-yellow-400 font-serif-heading font-semibold">AI Strategist & Security Architect</p>
+                                    <p class="text-blue-300 mt-2">Continuous Learner • Innovation Driver • Future Builder</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex-grow">
+                                <div class="prose prose-lg prose-invert max-w-none text-blue-200 space-y-6 leading-relaxed">
+                                    <p class="text-lg">My journey is fueled by deep curiosity about how artificial intelligence, cybersecurity, and business strategy intersect to solve complex problems. I approach every project as an opportunity to push my technical boundaries, learn from experts, and contribute meaningful solutions to real-world challenges.</p>
+                                    
+                                    <p class="text-lg">What defines my approach is the seamless integration of <strong class="text-yellow-400">advanced technical expertise</strong>, <strong class="text-yellow-400">strategic business acumen</strong>, and <strong class="text-yellow-400">human-centered innovation</strong>. I believe the most impactful solutions emerge when cutting-edge technology serves real-world needs while maintaining the highest standards of security and ethical implementation.</p>
+                                    
+                                    <p class="text-lg">Through projects like developing my award-winning AWANG-AI financial crime detection framework—which earned national recognition from Indonesia's Financial Services Authority—I've learned to tackle complex technical challenges while keeping human impact at the center. Each project teaches me more about building solutions that are not only technically sound but also transparent, scalable, and genuinely useful for the people who depend on them.</p>
+                                    
+                                    <div class="mt-8 p-6 bg-indigo-900/30 rounded-xl border border-yellow-400/30 backdrop-blur-sm">
+                                        <p class="text-center text-lg italic text-yellow-300 leading-relaxed">"Innovation isn't just about building the next breakthrough—it's about understanding how that breakthrough can responsibly transform the world while keeping security and ethics at its core."</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="cv" class="py-20 sm:py-24 lg:py-32">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="relative flex flex-col items-center justify-center text-center max-w-3xl mx-auto" data-animate>
+        <h2 class="text-4xl font-serif-heading font-bold tracking-tight text-blue-50 sm:text-5xl lg:text-6xl">Professional Profile</h2>
+        <div class="relative mt-4 mb-6">
+            <svg class="h-8 w-64 text-yellow-400/60" fill="none" viewBox="0 0 254 30">
+                <path class="learning-line" d="M1 15C51 2, 158 39, 253 15" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+            </svg>
+        </div>
+        <p class="max-w-2xl text-lg text-blue-300 leading-relaxed">Comprehensive overview of my expertise in AI innovation, cybersecurity architecture, and strategic business intelligence—documenting a journey of continuous growth and measurable impact.</p>
+        <div class="mt-12">
+            <a href="https://drive.google.com/uc?export=download&id=1N5Fu9HgkXF1Nx9Ss8ob-nWohZTId-Ake" download="Nathan_Dava_AI_Cybersecurity_CV.pdf" class="cta-primary group inline-flex items-center justify-center gap-3 text-gray-900 font-bold py-4 px-10 rounded-lg text-xl shadow-xl">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10"></path>
+                </svg>
+                Download Complete CV
+                <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+            </a>
+        </div>
+        <div class="mt-6 text-sm text-yellow-400/70">
+            <p>Latest update: September 2025 | Comprehensive PDF, 2 pages | Technical & Strategic Focus</p>
+        </div>
+    </div>
+</div>
+            <section id="contact" class="py-20 sm:py-24 lg:py-32">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="relative max-w-4xl mx-auto text-center" data-animate>
+                        <h2 class="text-4xl font-serif-heading font-bold tracking-tight text-blue-50 sm:text-5xl lg:text-6xl">Connect & Collaborate</h2>
+                        <svg class="absolute -bottom-0 left-1/2 -translate-x-1/2 h-8 w-64 text-yellow-400/60" fill="none" viewBox="0 0 254 30">
+                            <path class="learning-line" d="M1 15C51 2, 158 39, 253 15" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+                        </svg>
+                        <p class="mt-6 text-xl text-blue-300 leading-relaxed">Ready to explore cutting-edge AI and cybersecurity opportunities? Let's discuss how we can build innovative solutions that drive both technological advancement and business transformation.</p>
+                        
+                        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <a href="mailto:nathandava20@gmail.com" class="contact-card group rounded-xl p-8 text-center transition-all">
+                                <div class="flex items-center justify-center mb-4">
+                                    <svg class="w-12 h-12 text-yellow-400 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                    </svg>
+                                </div>
+                                <h3 class="text-2xl font-serif-heading font-semibold text-blue-50 mb-2">Professional Email</h3>
+                                <p class="text-yellow-400 group-hover:text-yellow-300 text-lg transition-colors">nathandava20@gmail.com</p>
+                                <p class="text-sm text-blue-300/70 mt-2">For opportunities, projects & partnerships</p>
+                            </a>
+                            
+                            <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" class="contact-card group rounded-xl p-8 text-center transition-all">
+                                <div class="flex items-center justify-center mb-4">
+                                    <svg class="w-12 h-12 text-yellow-400 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="text-2xl font-serif-heading font-semibold text-blue-50 mb-2">LinkedIn Network</h3>
+                                <p class="text-yellow-400 group-hover:text-yellow-300 text-lg transition-colors">Professional Connect</p>
+                                <p class="text-sm text-blue-300/70 mt-2">Industry insights & thought leadership</p>
+                            </a>
+                        </div>
+                        
+                        <div class="mt-12 p-8 bg-indigo-900/20 rounded-xl border border-yellow-400/30 backdrop-blur-sm">
+                            <div class="flex items-center justify-center gap-3 mb-4">
+                                <svg class="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <p class="text-lg text-yellow-300 font-semibold">Response Excellence</p>
+                            </div>
+                            <p class="text-blue-200 leading-relaxed">
+                                Just as I approach technical challenges with precision and thoroughness, I value meaningful professional connections. I typically respond to inquiries within 24-48 hours with thoughtful, detailed responses. For time-critical opportunities or urgent collaboration requests, please indicate priority in your message subject.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-transparent mt-auto border-t border-yellow-400/20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+                <div class="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0 text-sm text-yellow-400/70">
+                    <p>&copy; 2025 Nathan Dava Arkananta. Building the future through AI & Cybersecurity.</p>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
+                        </svg>
+                        <p class="text-yellow-400/80">Innovating responsibly for a secure digital future</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- Professional Typewriter Effect ---
+            const typewriterElement = document.getElementById('typewriter');
+            if (typewriterElement) {
+                new Typed('#typewriter', { 
+                    strings: ['Nathan Dava Arkananta'], 
+                    typeSpeed: 70, 
+                    startDelay: 800, 
+                    showCursor: true, 
+                    cursorChar: '|', 
+                    autoInsertCss: true,
+                    loop: false,
+                    fadeOut: false,
+                    shuffle: false,
+                    backSpeed: 0
+                });
+            }
+
+            // --- Innovation Ray System ---
+            const rayContainer = document.getElementById('innovation-rays');
+            function createInnovationRay() {
+                const ray = document.createElement('div');
+                ray.className = 'innovation-ray';
+                
+                const width = Math.random() * 250 + 150;
+                const height = Math.random() * 4 + 2;
+                const angle = Math.random() * 360;
+                
+                ray.style.width = `${width}px`;
+                ray.style.height = `${height}px`;
+                ray.style.left = `${Math.random() * 100}%`;
+                ray.style.top = `${Math.random() * 100}%`;
+                ray.style.transform = `rotate(${angle}deg)`;
+                ray.style.animationDelay = `${Math.random() * 10}s`;
+                
+                rayContainer.appendChild(ray);
+                
+                setTimeout(() => {
+                    if (ray.parentNode) ray.remove();
+                }, 20000);
+            }
+
+            for (let i = 0; i < 5; i++) {
+                setTimeout(() => createInnovationRay(), i * 3000);
+            }
+            setInterval(createInnovationRay, 15000);
+
+            // --- Dynamic Knowledge Nodes ---
+            const nodeContainer = document.getElementById('knowledge-nodes');
+            function createKnowledgeNode() {
+                const node = document.createElement('div');
+                node.className = 'knowledge-node';
+                
+                const size = Math.random() * 120 + 80;
+                node.style.width = `${size}px`;
+                node.style.height = `${size}px`;
+                node.style.left = `${Math.random() * 100}%`;
+                node.style.top = `${Math.random() * 100}%`;
+                node.style.animationDelay = `${Math.random() * 15}s`;
+                
+                nodeContainer.appendChild(node);
+                
+                setTimeout(() => {
+                    if (node.parentNode) node.remove();
+                }, 30000);
+            }
+
+            for (let i = 0; i < 6; i++) {
+                setTimeout(() => createKnowledgeNode(), i * 2000);
+            }
+            setInterval(createKnowledgeNode, 8000);
+
+            // --- Neural Network Canvas ---
+            const canvas = document.getElementById('network-canvas');
+            const ctx = canvas.getContext('2d');
+            
+            function resizeCanvas() {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            }
+            resizeCanvas();
+            
+            let networkVines = [];
+            let scrollProgress = 0;
+            const maxVines = 5;
+            const vineColors = [
+                { r: 251, g: 191, b: 36 },   // Primary gold
+                { r: 63, g: 81, b: 181 },    // Neural blue
+                { r: 156, g: 39, b: 176 },   // Innovation purple
+                { r: 255, g: 193, b: 7 },    // Bright gold
+                { r: 0, g: 188, b: 212 }     // Cyber teal
+            ];
+
+            class NeuralVine {
+                constructor() {
+                    this.x = Math.random() * canvas.width;
+                    this.y = canvas.height + 50;
+                    this.segments = [{ x: this.x, y: this.y, age: 0 }];
+                    this.maxLength = Math.random() * 350 + 200;
+                    this.baseAngle = -Math.PI / 2 + (Math.random() - 0.5) * 0.3;
+                    this.angle = this.baseAngle;
+                    this.growthSpeed = 0.5 + Math.random() * 0.4;
+                    this.color = vineColors[Math.floor(Math.random() * vineColors.length)];
+                    this.opacity = Math.random() * 0.4 + 0.3;
+                    this.thickness = Math.random() * 2.5 + 1;
+                    this.connections = [];
+                    this.energy = 1;
+                }
+
+                grow() {
+                    if (this.segments.length >= this.maxLength || this.energy <= 0) return;
+                    
+                    const lastSegment = this.segments[this.segments.length - 1];
+                    
+                    // Neural network-like growth patterns
+                    this.angle += (Math.random() - 0.5) * 0.15;
+                    this.angle += Math.sin(this.segments.length * 0.05) * 0.08;
+                    
+                    const energyFactor = Math.max(0.4, this.energy);
+                    const newX = lastSegment.x + Math.cos(this.angle) * this.growthSpeed * energyFactor;
+                    const newY = lastSegment.y + Math.sin(this.angle) * this.growthSpeed * energyFactor;
+                    
+                    this.segments.push({ x: newX, y: newY, age: 0 });
+                    
+                    // Age existing segments
+                    this.segments.forEach(segment => segment.age++);
+                    
+                    // Create connections to other vines occasionally
+                    if (this.segments.length > 30 && Math.random() < 0.02) {
+                        this.createConnection(lastSegment);
+                    }
+                    
+                    this.energy *= 0.9995;
+                }
+
+                createConnection(fromSegment) {
+                    // Find nearby vines for connection
+                    networkVines.forEach(otherVine => {
+                        if (otherVine !== this && otherVine.segments.length > 20) {
+                            const nearestSegment = otherVine.segments[Math.floor(otherVine.segments.length * 0.7)];
+                            const distance = Math.sqrt(
+                                (fromSegment.x - nearestSegment.x) ** 2 + 
+                                (fromSegment.y - nearestSegment.y) ** 2
+                            );
+                            
+                            if (distance < 200 && this.connections.length < 2) {
+                                this.connections.push({
+                                    from: fromSegment,
+                                    to: nearestSegment,
+                                    opacity: Math.random() * 0.3 + 0.2
+                                });
+                            }
+                        }
+                    });
+                }
+
+                drawConnections(ctx) {
+                    this.connections.forEach(connection => {
+                        ctx.beginPath();
+                        ctx.moveTo(connection.from.x, connection.from.y);
+                        ctx.lineTo(connection.to.x, connection.to.y);
+                        
+                        const dynamicOpacity = connection.opacity * (0.3 + scrollProgress * 0.7);
+                        ctx.strokeStyle = `rgba(${this.color.r}, ${this.color.g}, ${this.color.b}, ${dynamicOpacity})`;
+                        ctx.lineWidth = 0.8;
+                        ctx.stroke();
+                    });
+                }
+
+                draw(ctx) {
+                    if (this.segments.length < 2) return;
+                    
+                    // Draw main neural pathway
+                    ctx.beginPath();
+                    ctx.moveTo(this.segments[0].x, this.segments[0].y);
+                    
+                    for (let i = 1; i < this.segments.length - 1; i++) {
+                        const current = this.segments[i];
+                        const next = this.segments[i + 1];
+                        const xc = (current.x + next.x) / 2;
+                        const yc = (current.y + next.y) / 2;
+                        ctx.quadraticCurveTo(current.x, current.y, xc, yc);
+                    }
+                    
+                    const dynamicOpacity = this.opacity * (0.2 + scrollProgress * 0.8) * this.energy;
+                    ctx.strokeStyle = `rgba(${this.color.r}, ${this.color.g}, ${this.color.b}, ${dynamicOpacity})`;
+                    ctx.shadowColor = `rgba(${this.color.r}, ${this.color.g}, ${this.color.b}, 0.6)`;
+                    ctx.shadowBlur = 3 + scrollProgress * 5;
+                    ctx.lineWidth = this.thickness * (0.7 + scrollProgress * 0.5);
+                    ctx.stroke();
+                    
+                    // Draw connections
+                    this.drawConnections(ctx);
+                    
+                    // Draw neural nodes
+                    if (this.segments.length > 15) {
+                        for (let i = 8; i < this.segments.length; i += 12) {
+                            const segment = this.segments[i];
+                            const nodeOpacity = dynamicOpacity * 0.9;
+                            
+                            ctx.beginPath();
+                            ctx.arc(segment.x, segment.y, 2.5, 0, Math.PI * 2);
+                            ctx.fillStyle = `rgba(${this.color.r}, ${this.color.g}, ${this.color.b}, ${nodeOpacity})`;
+                            ctx.shadowBlur = 6;
+                            ctx.fill();
+                        }
+                    }
+                }
+            }
+
+            function initNeuralNetwork() {
+                networkVines = [];
+                for (let i = 0; i < maxVines; i++) {
+                    networkVines.push(new NeuralVine());
+                }
+            }
+            initNeuralNetwork();
+
+            // --- Advanced AI Particle System ---
+            const particles = [];
+            const maxParticles = window.innerWidth < 768 ? 25 : 40;
+            const particleTypes = ['data', 'neural', 'innovation'];
+
+            class AIParticle {
+                constructor() {
+                    this.element = document.createElement('div');
+                    this.element.className = 'ai-particle';
+                    document.body.appendChild(this.element);
+                    this.reset();
+                }
+
+                reset() {
+                    this.x = Math.random() * window.innerWidth;
+                    this.y = Math.random() * window.innerHeight;
+                    this.vx = (Math.random() - 0.5) * 0.6;
+                    this.vy = (Math.random() - 0.5) * 0.6;
+                    this.life = 0;
+                    this.maxLife = Math.random() * 400 + 300;
+                    this.size = Math.random() * 5 + 3;
+                    this.type = particleTypes[Math.floor(Math.random() * particleTypes.length)];
+                    this.rotationSpeed = (Math.random() - 0.5) * 3;
+                    this.rotation = 0;
+                    
+                    this.element.className = `ai-particle particle-${this.type}`;
+                    this.element.style.width = `${this.size}px`;
+                    this.element.style.height = `${this.size}px`;
+                    this.element.style.animationDelay = `${Math.random() * 6}s`;
+                }
+
+                update() {
+                    // AI-like movement with learning adaptation
+                    this.x += this.vx + Math.sin(this.life * 0.008) * 0.15;
+                    this.y += this.vy + Math.cos(this.life * 0.012) * 0.15;
+                    this.rotation += this.rotationSpeed;
+                    this.life++;
+                    
+                    const lifeRatio = this.life / this.maxLife;
+                    let opacity;
+                    if (lifeRatio < 0.2) {
+                        opacity = lifeRatio * 5;
+                    } else if (lifeRatio > 0.8) {
+                        opacity = (1 - lifeRatio) * 5;
+                    } else {
+                        const pulse = Math.sin(lifeRatio * Math.PI * 6) * 0.3;
+                        opacity = 0.9 + pulse;
+                    }
+                    
+                    this.element.style.transform = `translate(${this.x}px, ${this.y}px) rotate(${this.rotation}deg)`;
+                    this.element.style.opacity = Math.max(0, opacity);
+                    
+                    if (this.life >= this.maxLife || this.x < -30 || this.x > window.innerWidth + 30 || 
+                        this.y < -30 || this.y > window.innerHeight + 30) {
+                        this.reset();
+                    }
+                }
+            }
+
+            for (let i = 0; i < maxParticles; i++) {
+                particles.push(new AIParticle());
+            }
+
+            // --- Animation Loop ---
+            let animationId;
+            function animate() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                
+                networkVines.forEach(vine => {
+                    vine.grow();
+                    vine.draw(ctx);
+                });
+                
+                particles.forEach(particle => particle.update());
+                
+                animationId = requestAnimationFrame(animate);
+            }
+            animate();
+
+            // --- Enhanced Scroll-triggered Animations ---
+            const animatedElements = document.querySelectorAll('[data-animate]');
+            const textRevealElements = document.querySelectorAll('.animate-text-reveal');
+            const glowElements = document.querySelectorAll('.animate-glow');
+            const listItemElements = document.querySelectorAll('.animate-list-item');
+            
+            const learningObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    const learningLine = entry.target.querySelector('.learning-line');
+                    if (entry.isIntersecting) {
+                        // Main reveal animation
+                        entry.target.classList.add('reveal');
+                        
+                        // Handle learning line animation
+                        if (learningLine) {
+                            learningLine.classList.add('activate');
+                        }
+
+                        // Handle staggered animations for child elements
+                        const delayedElements = entry.target.querySelectorAll('[data-animate-delay]');
+                        delayedElements.forEach((element, index) => {
+                            setTimeout(() => {
+                                element.classList.add('reveal');
+                            }, 100 + (index * 100)); // 100ms base + 100ms per element
+                        });
+
+                        // Handle list item animations
+                        const listItems = entry.target.querySelectorAll('.animate-list-item');
+                        listItems.forEach((item, index) => {
+                            setTimeout(() => {
+                                item.classList.add('active');
+                            }, 200 + (index * 150)); // 200ms base + 150ms per item
+                        });
+
+                    } else {
+                        entry.target.classList.remove('reveal');
+                        if (learningLine) {
+                            learningLine.classList.remove('activate');
+                        }
+
+                        // Remove staggered animations
+                        const delayedElements = entry.target.querySelectorAll('[data-animate-delay]');
+                        delayedElements.forEach(element => {
+                            element.classList.remove('reveal');
+                        });
+
+                        // Remove list item animations
+                        const listItems = entry.target.querySelectorAll('.animate-list-item');
+                        listItems.forEach(item => {
+                            item.classList.remove('active');
+                        });
+                    }
+                });
+            }, { 
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+
+            // Separate observer for text reveal animations
+            const textObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, {
+                threshold: 0.2,
+                rootMargin: '0px 0px -30px 0px'
+            });
+
+            // Separate observer for glow animations
+            const glowObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.classList.add('active');
+                        }, 300); // Delay for dramatic effect
+                    }
+                });
+            }, {
+                threshold: 0.3,
+                rootMargin: '0px 0px -20px 0px'
+            });
+
+            // Apply observers
+            animatedElements.forEach(el => learningObserver.observe(el));
+            textRevealElements.forEach(el => textObserver.observe(el));
+            glowElements.forEach(el => glowObserver.observe(el));
+            listItemElements.forEach(el => textObserver.observe(el));
+
+            // --- Navigation System ---
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('#nav-links a');
+            
+            const navigationObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.getAttribute('id');
+                        navLinks.forEach(link => {
+                            link.classList.remove('text-yellow-300', 'bg-yellow-400/10');
+                            link.classList.add('text-blue-200');
+                            if (link.getAttribute('href') === `#${id}`) {
+                                link.classList.remove('text-blue-200');
+                                link.classList.add('text-yellow-300', 'bg-yellow-400/10');
+                            }
+                        });
+                    }
+                });
+            }, { 
+                rootMargin: '-20% 0px -80% 0px'
+            });
+
+            sections.forEach(section => navigationObserver.observe(section));
+
+            // --- Scroll Progress System ---
+            let ticking = false;
+            function updateProgressFlow() {
+                const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+                scrollProgress = Math.min(window.scrollY / docHeight, 1);
+                
+                networkVines.forEach(vine => {
+                    vine.energy = Math.max(0.4, 1 - scrollProgress * 0.2);
+                });
+                
+                ticking = false;
+            }
+
+            window.addEventListener('scroll', () => {
+                if (!ticking) {
+                    requestAnimationFrame(updateProgressFlow);
+                    ticking = true;
+                }
+            });
+
+            // --- Advanced Mouse Interaction ---
+            let mouseX = 0, mouseY = 0;
+            window.addEventListener('mousemove', (e) => {
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+                
+                particles.forEach(particle => {
+                    const dx = mouseX - particle.x;
+                    const dy = mouseY - particle.y;
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+                    
+                    if (distance < 120) {
+                        const force = 0.0008;
+                        particle.vx += dx * force;
+                        particle.vy += dy * force;
+                    }
+                });
+            });
+
+            // --- Responsive System Management ---
+            window.addEventListener('resize', () => {
+                resizeCanvas();
+                initNeuralNetwork();
+                
+                const newMaxParticles = window.innerWidth < 768 ? 25 : 40;
+                while (particles.length > newMaxParticles) {
+                    const particle = particles.pop();
+                    particle.element.remove();
+                }
+                while (particles.length < newMaxParticles) {
+                    particles.push(new AIParticle());
+                }
+            });
+
+            // --- Performance Management ---
+            document.addEventListener('visibilitychange', () => {
+                if (document.hidden) {
+                    if (animationId) {
+                        cancelAnimationFrame(animationId);
+                    }
+                } else {
+                    animate();
+                }
+            });
+
+            // --- Smooth Professional Navigation ---
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = link.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
